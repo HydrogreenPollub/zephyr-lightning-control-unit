@@ -20,6 +20,7 @@ target_sources(app PRIVATE
         peripherals/adc.c
         peripherals/pwm.c
         peripherals/counter.c
+        peripherals/led_strip_ctrl.c
 )
 
 target_include_directories(app PRIVATE

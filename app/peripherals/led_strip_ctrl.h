@@ -20,5 +20,6 @@
 int led_strip_init(const struct device *strip);
 int led_strip_set_pixel(const struct device *strip, struct led_rgb *pixels, size_t pixel_index, size_t num_pixels, uint8_t r, uint8_t g, uint8_t b);
 int led_strip_set_all_pixels(const struct device *strip, struct led_rgb *pixels, size_t num_pixels, uint8_t r, uint8_t g, uint8_t b);
+int led_strip_clear_all_pixels(const struct device *strip, struct led_rgb *pixels, size_t num_pixels);
 
 #endif //LED_STRIP_CTRL_H

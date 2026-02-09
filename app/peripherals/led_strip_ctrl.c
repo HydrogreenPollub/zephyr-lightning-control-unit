@@ -33,5 +33,13 @@ int led_strip_set_all_pixels(const struct device *strip, struct led_rgb *pixels,
     return led_strip_update_rgb(strip, pixels, num_pixels);
 }
 
+int led_strip_clear_all_pixels(const struct device *strip, struct led_rgb *pixels, size_t num_pixels) {
+    memset(pixels, 0x00, num_pixels * sizeof(struct led_rgb));
+    for (size_t i = 0; i < num_pixels; i++) {
+        pixels[i] = RGB(0, 0, 0);
+    }
+    return led_strip_update_rgb(strip, pixels, num_pixels);
+}
+
 
 

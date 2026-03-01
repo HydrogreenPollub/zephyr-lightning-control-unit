@@ -4,7 +4,7 @@
 
 //LIGHT_HAZARD, LIGHT_BEAM, LIGHT_POSITION, LIGHT_RIGHT_INDICATOR, LIGHT_LEFT_INDICATOR
 
-#include "lightning_control_unit.h"
+#include "lighting_control_unit.h"
 
 LOG_MODULE_REGISTER(lightning_control_unit, LOG_LEVEL_INF);
 

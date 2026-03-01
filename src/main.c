@@ -6,7 +6,7 @@
 #include <zephyr/device.h>
 #include <zephyr/drivers/spi.h>
 #include <zephyr/sys/util.h>
-#include "lightning_control_unit.h"
+//#include "lighting_control_unit.h"
 
 LOG_MODULE_REGISTER(main);
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13.1)
 
 if(NOT DEFINED BOARD)
-    set(BOARD lightning_control_unit CACHE STRING "Zephyr target board")
+    set(BOARD lighting_control_unit CACHE STRING "Zephyr target board")
     message(STATUS "BOARD not defined externally, using default: ${BOARD}")
 endif()
 
@@ -14,12 +14,12 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(app LANGUAGES C)
 target_sources(app PRIVATE
         src/main.c
-        src/lightning_control_unit.c
+       # src/lighting_control_unit.c
         peripherals/can.c
         peripherals/gpio.c
-        peripherals/adc.c
+       # peripherals/adc.c
         peripherals/pwm.c
-        peripherals/counter.c
+       # peripherals/counter.c
         peripherals/led_strip_ctrl.c
 )
 

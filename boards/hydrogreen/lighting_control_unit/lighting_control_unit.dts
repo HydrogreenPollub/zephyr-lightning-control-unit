@@ -5,8 +5,8 @@
 #include <zephyr/dt-bindings/led/led.h>
 
 / {
-	model = "Hydrogreen Lightning control unit board";
-	compatible = "hydrogreen,lightning-control-unit";
+	model = "Hydrogreen Lighting control unit board";
+	compatible = "hydrogreen,lighting-control-unit";
 
 	aliases {
 		can-rx-led = &can_rx_led;
@@ -121,6 +121,7 @@
 		spi-max-frequency = <4000000>;
 		frame-format = <32768>; /* SPI_FRAME_FORMAT_TI */
 		chain-length = <95>;
+
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 		color-mapping = <LED_COLOR_ID_GREEN

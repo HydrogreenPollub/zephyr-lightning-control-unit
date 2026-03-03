@@ -2,8 +2,8 @@
 // Created by inż. Dawid Pisarczyk on 28.12.2025.
 //
 
-#ifndef LIGHTNING_CONTROL_UNIT_H
-#define LIGHTNING_CONTROL_UNIT_H
+#ifndef LIGHTING_CONTROL_UNIT_H
+#define LIGHTING_CONTROL_UNIT_H
 
 #include <stdint.h>
 #include <zephyr/kernel.h>
@@ -15,7 +15,13 @@
 #include "led_strip_ctrl.h"
 #include "can_ids.h"
 
-#define STRIP_NUM_PIXELS	DT_PROP(DT_ALIAS(led_strip), chain_length)
+#define STRIP_NODE		DT_ALIAS(led_strip)
+#define STRIP_NUM_PIXELS 16
+// #if DT_NODE_HAS_PROP(DT_ALIAS(led_strip), chain_length)
+// #define STRIP_NUM_PIXELS	DT_PROP(DT_ALIAS(led_strip), chain_length)
+// #else
+// #error Unable to determine length of LED strip
+// #endif
 
 typedef struct lcu_can_t{
     const struct device *can_device;
@@ -36,4 +42,4 @@ void lcu_init();
 
 
 
-#endif //LIGHTNING_CONTROL_UNIT_H
+#endif //LIGHTING_CONTROL_UNIT_H

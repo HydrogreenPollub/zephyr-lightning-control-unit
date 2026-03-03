@@ -1,5 +1,5 @@
-identifier: lightning_control_unit
-name: Hydrogreen lightning control unit
+identifier: lighting_control_unit
+name: Hydrogreen lighting control unit
 toolchain:
   - zephyr
   - gnuarmemb

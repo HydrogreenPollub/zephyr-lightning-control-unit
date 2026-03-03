@@ -6,11 +6,13 @@
 
 #include "lighting_control_unit.h"
 
-LOG_MODULE_REGISTER(lightning_control_unit, LOG_LEVEL_INF);
+#include "zephyr/drivers/gpio.h"
+
+LOG_MODULE_REGISTER(lighting_control_unit, LOG_LEVEL_INF);
 
 static const struct can_filter lcu_can_filters[] = {
-	CAN_FILTER(CAN_ID_BRAKE_PEDAL_VOLTAGE),
-	CAN_FILTER(CAN_ID_BUTTONS_LIGHTS_MASK),
+	//CAN_FILTER(CAN_ID_BRAKE_PEDAL_VOLTAGE),
+	//CAN_FILTER(CAN_ID_BUTTONS_LIGHTS_MASK),
 };
 
 lcu_can_t can = {

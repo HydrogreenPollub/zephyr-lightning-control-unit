@@ -1,0 +1,6 @@
+board:
+  name: lighting_control_unit
+  full_name: Hydrogreen Lighting Control Unit
+  vendor: hydrogreen
+  socs:
+    - name: stm32g491xx

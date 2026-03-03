@@ -1,6 +1,0 @@
-board:
-  name: lightning_control_unit
-  full_name: Hydrogreen Lightning Control Unit
-  vendor: hydrogreen
-  socs:
-    - name: stm32g491xx
